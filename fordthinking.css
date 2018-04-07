@@ -1,0 +1,97 @@
+/*! fordthinking.css v1.0.0
+  * Copyright Perth Web Factory 2018. All rights reserved.
+  * www.perthwebfactory.com */
+/* ==========================================================================
+   FORD THINKING CSS FRAMEWORK
+   ========================================================================== */
+
+/**
+ * 1. Standardize all headings.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html,body{font-size:15px; font-weight: 300; line-height:1.5; height:100%;width:100%;margin:0;padding:0;}html{overflow-x:hidden}
+h1{font-size:30px}h2{font-size:26px}h3{font-size:20px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}
+h1,h2{font-weight:900;margin:10px 0}
+h3,h4,h5{font-weight:600;margin:10px 0}
+h6{font-weight:400;margin:10px 0}
+.ford-wide{letter-spacing:6px}
+.ford-wide-super{letter-spacing: 10px;}
+.ford-toggle-small{font-size: 60%;}
+.ford-toggle-medium{font-size: 80%;}
+.ford-toggle-large{font-size: 100%;}
+.ford-toggle-jumbo{font-size: 140%;}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+
+.ford-transparent {background:none!important}
+.ford-opacity
+
+/*
+    Orientation
+*/
+.ford-left{float:left!important;}
+.ford-right{float:right!important;}
+
+/* ==========================================================================
+   FORD THINKING DISPLAY MODULES
+   ========================================================================== */
+
+@media (max-width:300px){.ford-hide-tiny{display:none!important}}
+@media (max-width:480px){.ford-hide-mobile{display:none!important}}
+@media (max-width:600px){.ford-hide-small{display:none!important}}
+@media (max-width:1450px) and (min-width:600px){.ford-hide-medium{display:none!important}}
+@media (max-width:1600px) and (min-width:1450px){.ford-hide-average{display:none!important}}
+@media (max-width:1920px) and (min-width:1600px){.ford-hide-large{display:none!important}}
+@media (min-width:2000px){.ford-hide-xlarge{display:none!important}}
+@media screen, print {.ford-hide-print{display:none!important}}
+@media screen {.ford-hide{display:none!important}}
+
+.ford-topbar{width:100%; height:50px;}
+
+.ford-padding{padding:6px 14px!important}
+
+.ford-opacity{opacity:0.8}
+.ford-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+
+/* ==========================================================================
+   FORD THINKING ANIMATIONS
+   ========================================================================== */
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+w3-bar-item w3-button w3-right
+w3-sidebar w3-black w3-animate-top w3-large
+w3-button w3-black w3-large w3-padding w3-display-topright
+w3-bar-block w3-center
+w3-bar-item w3-button w3-text-grey w3-hover-black
+w3-container w3-hide-large w3-hide-medium
